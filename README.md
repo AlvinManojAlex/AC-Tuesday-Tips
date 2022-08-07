@@ -22,10 +22,14 @@ Now we have to code the part where we render the data from item array.
 <br />
 The EJS syntax for it is like, wherever we use JS we enclose it in `<% %>` or something similar to this syntax (Refer Documentation for all the tags).
 <br />
-The tags used here are 
+The tags used here are
+<br />
 `<% %>`: We enclosed the looping of the items array in this to indicate that it is JS code and not HTML code.
 <br />
 `<%= %>`: We used this to output the value in items array in the template, i.e., as HTML.
 
 # Working
 Initially, when the server is running, the items array is empty and so nothing will be displayed after the title. But after we add an item using the form, then items array will contain an element and that renders the item below the title heading.
+
+# References
+EJS documentation: [EJS Documentation](https://ejs.co/)
