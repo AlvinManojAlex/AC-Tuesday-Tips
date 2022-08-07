@@ -14,7 +14,8 @@ Our EJS files (i.e. the webpages we are rendering must be stored in a directory 
 As seen in the code, we render the 'home.ejs' when we perform a get request to "/" route. Along with that we are also passing the items array. The syntax followed is as such
 <br />
 `res.render('ejs_file', {'name_of_variable_in_ejs_file':'name_of_variable_in_server_file'});`
-Using the same variable names, avoid confusion as to which variable name was used in which file.
+<br />
+Using the same variable names, avoids confusion as to which variable name was used in which file.
 
 # Writing the home.ejs file
 The boilerplate for the file is same as our HTML page. We add a form that performs post request on "/" that adds an item to the item array.
