@@ -12,16 +12,19 @@ Our EJS files (i.e. the webpages we are rendering must be stored in a directory 
 `app.set("view engine", "ejs");`
 
 As seen in the code, we render the 'home.ejs' when we perform a get request to "/" route. Along with that we are also passing the items array. The syntax followed is as such
+<br />
 `res.render('ejs_file', {'name_of_variable_in_ejs_file':'name_of_variable_in_server_file'});`
 Using the same variable names, avoid confusion as to which variable name was used in which file.
 
 # Writing the home.ejs file
-The boilerplate for the file is same as our HTML page. 
-We add a form that performs post request on "/" that adds an item to the item array.
+The boilerplate for the file is same as our HTML page. We add a form that performs post request on "/" that adds an item to the item array.
 Now we have to code the part where we render the data from item array.
+<br />
 The EJS syntax for it is like, wherever we use JS we enclose it in `<% %>` or something similar to this syntax (Refer Documentation for all the tags).
+<br />
 The tags used here are 
 `<% %>`: We enclosed the looping of the items array in this to indicate that it is JS code and not HTML code.
+<br />
 `<%= %>`: We used this to output the value in items array in the template, i.e., as HTML.
 
 # Working
